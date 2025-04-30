@@ -17,6 +17,5 @@ while True:
         for handLms in results.multi_hand_landmarks:
             mpDraw.draw_landmarks(img, handLms)
 
-
     cv2.imshow("Image", img)
     cv2.waitKey(1)
