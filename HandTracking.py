@@ -14,6 +14,7 @@ cTime = 0
 while True:
     success, img = cap.read()
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    flipped = cv2.flip(img, 0)
     results = hands.process(imgRGB)
 
     if results.multi_hand_landmarks:
